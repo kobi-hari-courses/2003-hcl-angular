@@ -1,0 +1,12 @@
+:host {
+    display: grid;
+}
+
+h1 {
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkseagreen;
+    color: white;
+}

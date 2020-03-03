@@ -1,6 +1,6 @@
 :host {
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto auto 1fr;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -12,27 +12,8 @@ div {
     display: grid;
 }
 
-ul {
-    display: flex;
-    flex-direction: column;
-    margin: 8px;
-}
-
-li {
-    list-style: none;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 2px;
-    cursor: pointer;
-}
-
-li:hover {
-    background: rgba(211, 211, 211, 0.5);
-}
-
-li.humus {
-    background: rgb(187, 212, 187);
+app-title-presenter {
+    grid-column: 1 / -1;
 }
 
 .text-area {

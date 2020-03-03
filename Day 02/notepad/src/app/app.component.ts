@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  caption = 'Notepad App';
+  favoriteColor = 'lightsalmon';
   colors = ['Red', 'Blue', 'Green', 'Brown', 'Cyan', 'Black'];
   sizes = ['12px', '18px', '27px', '40px', '72px'];
   fonts = ['Tahoma', 'Segoe UI', 'David', 'Arial', 'Consolas'];
@@ -16,6 +18,7 @@ export class AppComponent {
 
   selectColor(value: string) {
     this.selectedColor = value;
+    this.favoriteColor = value;
   }
 
   selectSize(value: string) {
