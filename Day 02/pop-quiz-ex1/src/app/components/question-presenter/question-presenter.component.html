@@ -1,0 +1,7 @@
+<h1>{{caption}}</h1>
+
+<ul>
+    <li *ngFor="let option of options; let i = index"
+        (click)="onSelect(i)"
+    >{{option}}</li>
+</ul>

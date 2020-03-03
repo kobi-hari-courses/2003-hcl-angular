@@ -1,0 +1,26 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: green;
+    font-size: 28px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+li:hover {
+    background:yellow;
+}

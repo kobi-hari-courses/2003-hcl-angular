@@ -1,0 +1,12 @@
+div {
+    border: 1px solid black;
+    margin: 8px;
+}
+
+div.correct{
+    background: lightgreen;
+}
+
+div.wrong {
+    background: lightsalmon;
+}

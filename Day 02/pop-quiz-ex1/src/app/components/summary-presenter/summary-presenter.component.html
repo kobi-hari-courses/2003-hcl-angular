@@ -1,0 +1,7 @@
+<div *ngFor="let question of questions"
+    [class.correct]="question.userAnswerId === question.correctAnswerId"
+    [class.wrong]="question.userAnswerId !== question.correctAnswerId"
+>
+    <h2>{{question.caption}}</h2>
+    <p>{{question.answers[question.userAnswerId]}}</p>
+</div>

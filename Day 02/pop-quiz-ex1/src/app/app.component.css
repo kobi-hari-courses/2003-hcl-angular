@@ -1,0 +1,24 @@
+:host {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 28em;
+}
+
+.title-area {
+    grid-column: 1/-1;
+}
+
+h1 {
+    background: darkcyan;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    padding: 8px;
+    margin: 2px;
+}
+
+section {
+    display: grid;
+}

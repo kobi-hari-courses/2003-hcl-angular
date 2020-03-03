@@ -1,0 +1,23 @@
+<section class="title-area">
+    <h1>Pop Quiz!</h1>
+</section>
+
+<section class="question-area">
+    <app-question-presenter *ngIf="!isDone"
+        [caption]="currentQuestion.caption"
+        [options]="currentQuestion.answers"
+        (selected)="answerCurrentQuestion($event)"
+    >   
+
+    </app-question-presenter>
+    <app-is-done *ngIf="isDone">
+
+    </app-is-done>
+</section>
+
+<section class="summary-area">
+    <app-summary-presenter
+        [questions]="answeredQuestions"
+    >
+    </app-summary-presenter>
+</section>
