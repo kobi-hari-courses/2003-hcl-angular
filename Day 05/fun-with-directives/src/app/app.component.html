@@ -14,11 +14,9 @@
 
 <app-toggle>
     <h2>Hello World</h2>
-    <pre>
-        How
-        Are You?
-    </pre>
-
+    <input type="number" #aInput (input)="adder.setA(aInput.value)">
+    <app-adder #adder [a]="5" [b]="10"></app-adder>
+    <button appToggleButton>Show</button>
 </app-toggle>
 
 <hr>

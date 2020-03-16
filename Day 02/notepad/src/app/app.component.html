@@ -7,21 +7,28 @@
     [options]="colors"
     [selectedOption]="selectedColor"
     (selection)="selectColor($event)"
-  ></app-string-selector>
+  >
+  <span *appSelectorTemplate="let value" [style.color]="value">{{value}}</span>
+</app-string-selector>
 </div>
 <div class="sizes-area">
   <app-string-selector
     [options]="sizes"
     [selectedOption]="selectedSize"
     (selection)="selectSize($event)"
-  ></app-string-selector>
+  >
+  <span *appSelectorTemplate="let value" [style.font-size]="value">{{value}}</span>
+</app-string-selector>
 </div>
 <div class="fonts-area">
   <app-string-selector
     [options]="fonts"
     [selectedOption]="selectedFont"
     (selection)="selectFont($event)"
-  ></app-string-selector>
+  >
+  <span *appSelectorTemplate="let value" [style.font-family]="value">{{value}}</span>
+
+</app-string-selector>
 </div>
 <div class="text-area">
   <textarea

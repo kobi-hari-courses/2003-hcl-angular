@@ -16,9 +16,6 @@ export class ToggleButtonDirective {
   constructor(
     @Optional() private toggleComponent: ToggleComponent
     ) { 
-      if (!toggleComponent)
-      throw "appToggleButton must be used inside an app-toggle element";
-
     }
 
 }

@@ -8,6 +8,7 @@ import { NoSpaceDirective } from './directives/no-space.directive';
 import { TitleComponent } from './components/title/title.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
 import { ToggleButtonDirective } from './directives/toggle-button.directive';
+import { AdderComponent } from './components/adder/adder.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ToggleButtonDirective } from './directives/toggle-button.directive';
     NoSpaceDirective,
     TitleComponent,
     ToggleComponent,
-    ToggleButtonDirective
+    ToggleButtonDirective,
+    AdderComponent
   ],
   imports: [
     BrowserModule

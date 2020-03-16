@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ContentChild } from '@angular/core';
+import { SelectorTemplateDirective } from './selector-template.directive';
 
 @Component({
   selector: 'app-string-selector',
@@ -11,6 +12,9 @@ export class StringSelectorComponent implements OnInit {
 
   @Input()
   selectedOption: string = '';
+
+  @ContentChild(SelectorTemplateDirective)
+  templateContainer: SelectorTemplateDirective;
 
   @Output()
   selection = new EventEmitter<string>(); 

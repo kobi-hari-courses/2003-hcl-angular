@@ -3,5 +3,7 @@
       *ngFor="let item of options"
       [class.humus]="item===selectedOption"
       (click)="onSelect(item)"
-      >{{item}}</li>
+      >
+      <ng-container *ngTemplateOutlet="templateContainer.template; context: {$implicit: item}"></ng-container>
+    </li>
   </ul>  

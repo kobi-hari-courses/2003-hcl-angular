@@ -4,11 +4,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { StringSelectorComponent } from './components/string-selector/string-selector.component';
+import { SelectorTemplateDirective } from './components/string-selector/selector-template.directive';
 
 @NgModule({
   declarations: [
     AppComponent, 
-    TitlePresenterComponent, StringSelectorComponent
+    TitlePresenterComponent, 
+    StringSelectorComponent, 
+    SelectorTemplateDirective
   ],
   imports: [
     BrowserModule
