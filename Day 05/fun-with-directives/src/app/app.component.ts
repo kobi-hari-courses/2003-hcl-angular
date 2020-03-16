@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'fun-with-directives';
+  myFavoriteColor = 'magenta';
+  myHatedColor = 'salmon';
+
+  whenDirectiveIsOn() {
+    console.log('directive is on');
+  }
 }
