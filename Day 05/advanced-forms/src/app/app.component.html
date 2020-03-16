@@ -1,0 +1,32 @@
+<div class="form" [formGroup]="form">
+    <div class="field">
+        <label>Caption</label>
+        <input type="text" formControlName="caption">
+        <ng-container *ngIf="form.get('caption').touched">
+            <div class="errors" *ngIf="form.get('caption').errors as errs">
+                <div class="error" *ngIf="errs['required'] as err">required</div>
+                <div class="error" *ngIf="errs['email'] as err">must be in email format</div>
+                <div class="error" *ngIf="errs['minlength'] as err">length: {{err.actualLength}}/{{err.requiredLength}}</div>
+            </div>    
+        </ng-container>
+    </div>
+    <div class="field">
+        <label>Description</label>
+        <textarea formControlName="description"></textarea>
+        <ng-container *ngIf="form.get('description').touched">
+            <div class="errors" *ngIf="form.get('description').errors as errs">
+                <div class="error" *ngIf="errs['counters'] as err">
+                    Letters: {{err.chars}}/{{err.requiredChars}}, 
+                    Words: {{err.words}}/{{err.requiredWords}}
+                </div>
+            </div>    
+        </ng-container>
+
+    </div>
+</div>
+
+<hr>
+
+<pre>
+    {{ form.get('description').errors | json }}
+</pre>
